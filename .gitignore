@@ -4,3 +4,4 @@ python/.DS_Store
 .DS_Store
 
 python/main2.py
+*.pyc
