@@ -10,4 +10,3 @@ while True:
         answer = "yes"
 
     print(answer)
-
