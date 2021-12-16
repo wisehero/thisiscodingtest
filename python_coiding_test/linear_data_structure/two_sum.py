@@ -46,7 +46,19 @@ def twoSumV4(nums, target):
             return [nums_map[target - num], i]
         nums_map[num] = i
 
+
 # 투 포인터 사용
+def twoSumTwoPointer(nums, target):
+    left, right = 0, len(nums) - 1
+    while not left == right:
+        # 합이 타겟보다 작으면 왼쪽 포인터를 오른쪽으로
+        if nums[left] + nums[right] < target:
+            left += 1
+        # 합이 타겟보다 크면 오른쪽 포인터를 왼쪽으로
+        elif nums[left] + nums[right] > target:
+            right -= 1
+        else:
+            return [left, right]
 
 
 print(twoSumV3([2, 7, 11, 15], 9))
