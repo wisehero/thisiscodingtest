@@ -6,10 +6,14 @@
 아파트에 비어있는 집은 없고 모든 거주민들이 이 계약 조건을 지키고 왔다고 가정했을 때, 주어지는 양의 정수 k와 n에 대해 k층에 n호에는 몇 명이 살고 있는지 출력하라. 단, 아파트에는 0층부터 있고 각층에는 1호부터 있으며, 0층의 i호에는 i명이 산다.
 """
 
-test = int(input())
-n = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-for i in range(test):
-    k = int(input())
-    m = int(input())
+t = int(input())
 
+for _ in range(t):
+    floor = int(input())  # 층
+    num = int(input())  # 호
+    f0 = [x for x in range(1, num+1)]  # 0층 리스트
+    for k in range(floor):  # 층 수 만큼 반복
+        for i in range(1, num):  # 1 ~ n-1까지 (인덱스로 사용)
+            f0[i] += f0[i-1]  # 층별 각 호실의 사람 수를 변경
+    print(f0[-1])  # 가장 마지막 수 출력
 
