@@ -17,4 +17,4 @@ def is_prime_numberV2(x):
 
 
 
-print(is_prime_number(2))
+print(is_prime_number(137))
