@@ -20,7 +20,7 @@ def bfs(graph, start, visited):
 
 
 # 각 노드가 연결된 정보를 리스트 자료형으로 표현
-graph = graph = [
+graph = [
     [],
     [2, 3, 8],
     [1, 7],
