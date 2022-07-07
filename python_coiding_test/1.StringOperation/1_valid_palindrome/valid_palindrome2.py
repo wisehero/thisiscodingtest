@@ -1,9 +1,12 @@
-# 유효한 팰린드롬 Deque 풀이
+'''
+ 데크를 명시적으로 선언하면 좀 더 속도를 높일 수 있다.
+'''
 import collections
 
 
-def isPalindrome(s):
-    strs = collections.deque
+def isPalindrome(self, s: str) -> bool:
+    # 자료형 데크로 선언
+    strs = collections.deque()
 
     for char in s:
         if char.isalnum():
