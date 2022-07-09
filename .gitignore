@@ -5,3 +5,4 @@ python/.DS_Store
 
 python/main2.py
 *.pyc
+__init__.py
