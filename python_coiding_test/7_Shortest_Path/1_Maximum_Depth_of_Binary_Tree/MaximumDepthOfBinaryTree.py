@@ -8,7 +8,7 @@ import collections
 
 
 
-def maxDepth(self, root):
+def maxDepth(root):
     if root is None:
         return 0
     queue = collections.deque([root])
